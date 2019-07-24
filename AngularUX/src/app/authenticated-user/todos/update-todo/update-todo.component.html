@@ -1,0 +1,21 @@
+<H1>Update Todo</H1>
+<div class="container">
+  <div *ngIf="errorMessage!=null" class="alert alert-warning">{{loginErrorMessage}}</div>
+  <div *ngIf="todoForm.invalid && todoForm.dirty" class="alert alert-warning">Enter valid values</div>
+  <div *ngIf="description.invalid && todoForm.dirty" class="alert alert-warning">Descriptions are required and must be at least 5 characters in length</div>
+  <div *ngIf="targetDate.invalid && todoForm.dirty" class="alert alert-warning">Target Date is required</div>
+  <form (ngSubmit)="saveTodo()" #todoForm="ngForm">
+    <fieldset class="form-group">
+      <label>Description</label>
+      <input #description="ngModel" class="form-control" type="text" name="description" required="required" minlength="5" [(ngModel)]="todo.description" />
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label>Target Date</label>
+      <input #targetDate="ngModel" class="form-control" type="date" name="targetDate" required="required" [ngModel]="todo.targetDate | date:'yyyy-MM-dd'"
+        (ngModelChange)="todo.targetDate = $event" />
+    </fieldset>
+
+    <button type="submit" class="btn btn-success" >Save</button>
+  </form>
+</div>

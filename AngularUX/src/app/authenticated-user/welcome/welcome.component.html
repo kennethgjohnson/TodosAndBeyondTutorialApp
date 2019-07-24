@@ -1,0 +1,20 @@
+<h1>Welcome!</h1>
+
+<div class="container">Welcome {{username}}! For todos click <a routerLink="/todos">here</a>.</div>
+
+<br />
+<div class="container" *ngIf="welcomeMessage==''">
+    <button (click)="loadWelcomeMessage()" class="btn btn-success">Load Welcome!</button>
+</div>
+
+<span *ngIf="welcomeMessage!=''">
+    <h2>Your customized welcome message!</h2>
+    <div class="container">
+        {{welcomeMessage}}
+    </div>
+</span>
+
+<div *ngIf="errorMessage!=''" class="container">
+    <br/>
+    <div class="alert alert-danger">{{errorMessage}}</div>
+</div>
