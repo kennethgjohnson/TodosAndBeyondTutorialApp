@@ -1,4 +1,4 @@
-package com.vio.in28.todos.common.configuration;
+package com.kennethgjohnson.todosapp.common.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

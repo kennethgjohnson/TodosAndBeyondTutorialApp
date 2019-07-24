@@ -19,8 +19,8 @@ export class CreateTodoComponent implements OnInit {
   username: String = "";
   errorMessage: String;
 
-  @ViewChild('description', { read: ElementRef }) descriptionElement: ElementRef;
-  @ViewChild('todoForm') angularForm: NgForm;
+  @ViewChild('description', { read: ElementRef, static: true }) descriptionElement: ElementRef;
+  @ViewChild('todoForm', { static: true }) angularForm: NgForm;
 
   constructor(
     public route: ActivatedRoute,

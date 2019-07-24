@@ -1,4 +1,4 @@
-package com.vio.in28.todos.authenticated.todos;
+package com.kennethgjohnson.todosapp.authenticated.todos;
 
 import java.util.Date;
 

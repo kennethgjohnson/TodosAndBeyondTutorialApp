@@ -1,4 +1,4 @@
-package com.vio.in28.todos.authenticated.welcome;
+package com.kennethgjohnson.todosapp.authenticated.welcome;
 
 public class HelloWorldBean {
 

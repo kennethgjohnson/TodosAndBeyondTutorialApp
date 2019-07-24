@@ -1,4 +1,4 @@
-package com.vio.in28.todos.common.security;
+package com.kennethgjohnson.todosapp.common.security;
 
 public class JWTAuthorizationFilter {
 

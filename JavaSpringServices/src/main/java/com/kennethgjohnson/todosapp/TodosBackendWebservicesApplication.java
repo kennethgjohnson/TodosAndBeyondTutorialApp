@@ -1,4 +1,4 @@
-package com.vio.in28.todos;
+package com.kennethgjohnson.todosapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
